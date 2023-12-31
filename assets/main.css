@@ -65,7 +65,7 @@ sub{
     line-height: 0;
 }
 table{
-    width: 1000px;
+    width: 1001px;
     /* margin: 12px auto 24px auto; */
     float: center;
     height: 60px;
@@ -90,7 +90,7 @@ th,td{
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
-table.navigation{width:1000px; position: fixed;top: 0; background-color: #fff;  z-index: 999;height: 60px; }
+table.navigation{width:1001px; position: fixed;top: 0; background-color: #fff;  z-index: 999;height: 60px; }
 td.navigation{font-size:1.67em; white-space:nowrap; width:auto; text-align:center;  vertical-align: middle; padding:0px 0px 0px 0px;top: 0; background-color: #fff;
     z-index: 999}
 
