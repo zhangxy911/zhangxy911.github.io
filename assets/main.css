@@ -141,6 +141,7 @@
     width: 100%; /* 下拉菜单宽度为100% */
     z-index: 999; /* 高于其他内容的z-index */
     flex-direction: column;
+    font-size:3em;
     background-color: white; /* 设置背景颜色以覆盖下面的内容 */
 }
 
