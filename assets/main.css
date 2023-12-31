@@ -134,6 +134,7 @@
 }
 /* 下拉菜单的样式 */
 .nav-dropdown {
+    color: #813c54;
     display: none;
     position: absolute; /* 使下拉菜单固定 */
     top: 100%; /* 从顶部开始 */
