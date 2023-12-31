@@ -65,7 +65,8 @@
      line-height: 0;
  }
  table{
-     width: 800px;
+     width: 100%; 
+     max-width: 800px; 
      /* margin: 12px auto 24px auto; */
      float: center;
      height: 60px;
