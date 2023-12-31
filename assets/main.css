@@ -90,10 +90,39 @@
  .year{color: #505050; font-size:0.67em; font-weight: lighter;}
  
  /* Navigation Links (Home, Registration, etc) */
- table.navigation{width:800px; position: fixed;top: 0; background-color: #fff;  z-index: 999;height: 60px; }
- td.navigation{width:790px;font-size:1.67em; white-space:nowrap; width:16.67%; text-align:center;  vertical-align: middle; padding:0px 0px 0px 0px;top: 0; background-color: #fff;
-     z-index: 999}
+ /* table.navigation{width:800px; position: fixed;top: 0; background-color: #fff;  z-index: 999;height: 60px; }
+ td.navigation{width:800px;font-size:1.67em; white-space:nowrap; width:16.67%; text-align:center;  vertical-align: middle; padding:0px 0px 0px 0px;top: 0; background-color: #fff;
+     z-index: 999} */
  
+     /* 设置导航栏宽度为100%，以确保不超过视口宽度 */
+table.navigation {
+    width: 100%; /* 表格宽度为父容器的100% */
+    max-width: 800px; /* 表格的最大宽度为800px，但可以小于此值 */
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+    height: 60px;
+}
+
+/* 设置表格单元格宽度为自动分配，且不超过父元素宽度 */
+td.navigation {
+    font-size: 1.67em;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    background-color: #fff;
+    z-index: 999;
+    /* 移除了宽度的固定值，改为百分比来保持响应性 */
+}
+
+@media screen and (max-width: 800px) {
+    td.navigation {
+        font-size: 1em; /* 在较小屏幕上减小字体大小 */
+        padding: 10px 5px; /* 在较小屏幕上调整内边距 */
+    }
+}
  
  /* Sponsor Images */
  table.sponsors{width:800px;}
