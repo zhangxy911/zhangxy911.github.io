@@ -37,7 +37,7 @@ body{
     width: 1000px;
 }
 
-a{color: #b8860b; text-decoration:none;}
+a{ color: #813c54; ; text-decoration:none;}    
 a.current{color: #52739e;}
 a.current:hover{color: #e82945;}
 a:hover{color: #b2132e;}
@@ -65,8 +65,10 @@ sub{
 }
 table{
     width: 1000px;
-    margin: 12px auto 24px auto;
+    /* margin: 12px auto 24px auto; */
     float: center;
+    height: 60px;
+    
     /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
     /*border: 1px solid black;*/
 }
@@ -87,8 +89,10 @@ th,td{
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
-table.navigation{width:1000px;}
-td.navigation{font-size:1.67em; white-space:nowrap; width:auto; text-align:center; vertical-align:left; padding:0px 0px 0px 0px;}
+table.navigation{width:1000px; position: fixed;top: 0; background-color: #fff;  z-index: 999;height: 60px; }
+td.navigation{font-size:1.67em; white-space:nowrap; width:auto; text-align:center;  vertical-align: middle; padding:0px 0px 0px 0px;top: 0; background-color: #fff;
+    z-index: 999}
+
 
 /* Sponsor Images */
 table.sponsors{width:800px;}
