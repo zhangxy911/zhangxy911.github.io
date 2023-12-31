@@ -123,7 +123,7 @@
 .nav-toggle {
     display: none; /* 默认隐藏，只在移动端显示 */
     cursor: pointer;
-    font-size: 50px;
+    font-size: 80px;
     top: 0;
     /* 更多样式设置，比如位置、大小、背景等 */
 }
