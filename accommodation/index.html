@@ -2,7 +2,7 @@
 <html lang='en'>
 
 <head>
-    <base href=".">
+    <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/utar.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
     <meta name="description" content="Conference Template">
@@ -29,7 +29,43 @@
             text-align: center; /* Ensures the text inside is centered if it wraps */
         }
     </style>
-
+    <style>
+        /* 设置外部容器 */
+        .container {
+          overflow: hidden; /* 清除float */
+        }
+        
+        /* 设置图像和文本为左右两列 */
+        .image-column {
+          float: left; /* 将图像设置为左浮动 */
+          width: 400px; /* 设置图像列的宽度 */
+          margin-right: 20px; /* 在图像和文本之间增加一些空间 */
+        }
+        
+        .text-column {
+          float: right; /* 将文本设置为右浮动 */
+          width: calc(100% - 420px); /* 计算文本列的宽度，减去图像列的宽度和间隔 */
+          text-align: justify; /* 使文本两端对齐 */
+        }
+        
+        /* 清除浮动 */
+        .clearfix::after {
+          content: "";
+          display: table;
+          clear: both;
+        }        
+    </style>
+     <style>
+        .footer-background {
+            display: flex;          /* Enables flexbox */
+            justify-content: center; /* Horizontally centers content */
+            align-items: center;     /* Vertically centers content */
+            width: 100%;
+            height: 400px; /* Corrected the typo from '200x' to '200px' */
+            background-color: #f5f5f5; /* or any color you wish */
+            text-align: center; /* Ensures the text inside is centered if it wraps */
+        }
+    </style>
 </head>
 
 
@@ -102,23 +138,29 @@
         <div class="text-column">
             <h4>Address:</h5>
             <a target="_blank" href="https://www.google.com/maps?q=berjaya+times+square+hotel+address&newwindow=1&sca_esv=595032269&sxsrf=AM9HkKmpz1jYEJ5Su4qkahyyx9O5TJuk5g:1704182971860&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiImJlcmpheWEgdGltZXMgc3F1YXJlIGhvdGVsIGFkZHJlc3MyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSNIYUIABWJsVcAF4AZABAJgBU6AB8gSqAQE4uAEDyAEA-AEBwgIHECMYsAMYJ8ICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIiEC4YgAQYigUYQxjHARivARiYBRieBRiZBRjIAxiwA9gBAcICGRAuGIAEGIoFGEMYxwEYrwEYyAMYsAPYAQHCAh8QLhiABBiKBRhDGMcBGK8BGJgFGJkFGMgDGLAD2AEBwgIEECMYJ8ICChAAGIAEGIoFGEPiAwQYACBBiAYBkAYSugYGCAEQARgI&um=1&ie=UTF-8
-            ">Berjaya Times Square Hotel, Kuala Lumpur, Malaysia. </a>   
+            "style="color: rgb(30, 115, 190); font-size: 16px;">Berjaya Times Square Hotel, Kuala Lumpur, Malaysia. </a>   
             <h4>Website:</h5>
-            <a target="_blank" href="https://www.berjayahotel.com/kualalumpur/rooms.html">https://www.berjayahotel.com/kualalumpur/rooms.html </a>  
+            <a target="_blank" href="https://www.berjayahotel.com/kualalumpur/rooms.html"style="color: rgb(30, 115, 190); font-size: 16px; text-decoration: underline;">https://www.berjayahotel.com/kualalumpur/rooms.html </a>  
           </div>
       </div>
 
-      <br> <br>
+      <br> 
       Please be reminded that July is peak season for tourism in Malaysia. Therefore, the rooms of the conference venue may be sold out very soon. 
-      We encourage all conference delegates to make their reservation at their earliest convenience.  <br>
+      We encourage all conference delegates to make their reservation at their earliest convenience.  <br><br> 
 
 
-    <div style="text-align: center;">
-        <h2>Contact Us</h2>
-        <h5>Secretariat: Dr. Binbin Yin</h5>
-    
-        
-        Email: cmmm2024@163.com <br>
+      <div class="footer-background">
+        <div style="text-align: center;">
+            <h2>Contact Us</h2>
+            <strong><h5>Secretariat: Dr. Binbin Yin</h5> </strong>              
+            Email: cmmm2024@163.com <br>
+            
+            <h2>Wechat Group Code</h2>
+            <img class="center" src="assets/wechat.jpg" alt="wechat" id="wechat" style="width: 200px; height: auto;">
+
+            
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
