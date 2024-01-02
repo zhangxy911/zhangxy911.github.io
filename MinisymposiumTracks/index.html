@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-
-
 <head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="assets/utar.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Program | CMMM2024</title>
+    <title>CMMM2024</title>
+     <!-- Font Awesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=0.4"> -->
 
+    <!-- background -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
     <style>
-        .collapsible {
-          background-color: white;
-          color: #813c54;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: left;
-          outline: none;
-          font-size: 23px;
+        .footer-background {
+            display: flex;          /* Enables flexbox */
+            justify-content: center; /* Horizontally centers content */
+            align-items: center;     /* Vertically centers content */
+            width: 100%;
+            height: 150px; /* Corrected the typo from '200x' to '200px' */
+            background-color: #f5f5f5; /* or any color you wish */
+            text-align: center; /* Ensures the text inside is centered if it wraps */
         }
-        
-        .active, .collapsible:hover {
-          background-color: #f1f1f1;
-          color: blue;
-        }
-        
-        .content {
-          padding: 0 18px;
-          display: none;
-          overflow: hidden;
-          background-color: #f1f1f1;
-        }
-        </style>
+    </style>
+
 </head>
+
 
 <body>
     <!-- 下拉按钮 -->
@@ -57,7 +45,8 @@
             <a class="nav-link" title="Committee for the Conference" href="committee">Committee</a>
             <a class="nav-link" title="Plenary Speakers for the Conference" href="plenarySpeakers">Plenary Speakers</a>
             <a class="nav-link" title="Minisymposium Tracks for the Conference" href="MinisymposiumTracks">Minisymposium</a>
-            <a class="nav-link" title="Register for the Conference" href="registration">Registration</a>
+            <a class="nav-link" title="Registeration for the Conference" href="registration">Registration</a>
+            <a class="nav-link" title="Submission for the Conference" href="submission">Submission</a>
             <a class="nav-link" title="Accommodation to the Conference" href="accommodation">Accommodation</a>
         </div>
     </div>
@@ -80,14 +69,18 @@
                 <a title="Minisymposium Tracks for the Conference" href="MinisymposiumTracks">Minisymposium</a>
             </td>
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>            
+                <a title="Registeration for the Conference" href="registration">Registration</a>
+            </td>
+            <td class="navigation">
+                <a title="Submission for the Conference" href="submission">Submission</a>
+            </td>                        
             <td class="navigation">
                 <a title="Accommodation for the Conference" href="accommodation">Accommodation</a>
             </td>
             
         </tr>
     </table>
+
     <div class="banner">
         <img src="assets/Kuala.jpg" alt="Conference Template Banner">
         <div class="top-left">
@@ -97,6 +90,8 @@
             7-13 July, 2024 <br> Berjaya Times Square Hotel, Kuala Lumpur,  Malaysia
         </div>
     </div>
+
+   
 
 
     <h2>General Topics</h2>
