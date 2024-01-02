@@ -53,8 +53,33 @@
         overflow: hidden;
         background-color: #f1f1f1;
         }
-        </style>
-
+    </style>
+    <style>
+        /* 设置外部容器 */
+        .container {
+        overflow: hidden; /* 清除float */
+        }
+        
+        /* 设置图像和文本为左右两列 */
+        .image-column {
+        float: left; /* 将图像设置为左浮动 */
+        width: 200px; /* 设置图像列的宽度 */
+        margin-right: 20px; /* 在图像和文本之间增加一些空间 */
+        }
+        
+        .text-column {
+        float: right; /* 将文本设置为右浮动 */
+        width: calc(100% - 220px); /* 计算文本列的宽度，减去图像列的宽度和间隔 */
+        text-align: justify; /* 使文本两端对齐 */
+        }
+        
+        /* 清除浮动 */
+        .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+        }        
+    </style>
 
 </head>
 
