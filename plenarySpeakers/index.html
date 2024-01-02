@@ -57,30 +57,30 @@
     <style>
         /* 设置外部容器 */
         .container {
-        overflow: hidden; /* 清除float */
+            width: 960px; /* 或者你需要的任何宽度 */
+            overflow: hidden; 
         }
         
         /* 设置图像和文本为左右两列 */
         .image-column {
-        float: left; /* 将图像设置为左浮动 */
-        width: 200px; /* 设置图像列的宽度 */
-        margin-right: 20px; /* 在图像和文本之间增加一些空间 */
+            float: left; /* 将图像设置为左浮动 */
+            width: 210px; /* 设置图像列的宽度 */
+            margin-right: 20px; /* 在图像和文本之间增加一些空间 */
         }
         
         .text-column {
-        float: right; /* 将文本设置为右浮动 */
-        width: calc(100% - 220px); /* 计算文本列的宽度，减去图像列的宽度和间隔 */
-        text-align: justify; /* 使文本两端对齐 */
+            float: right; /* 更改为左浮动 */
+            width: calc(100% - 230px); /* 调整文本列的宽度，减去图像列宽度和间隔的总宽度 */
+            text-align: justify; /* 使文本两端对齐 */
         }
         
         /* 清除浮动 */
         .clearfix::after {
-        content: "";
-        display: table;
-        clear: both;
+            content: "";
+            display: table;
+            clear: both;
         }        
     </style>
-
 </head>
 
 
@@ -152,7 +152,14 @@
           <img src="assets/Giuseppe.jpg" alt="Giuseppe Puglisi" style="width: 100%; height: auto;">
         </div>
         <div class="text-column">
-          <p>Giuseppe Puglisi is a full professor of Mathematical Physics at the Politecnico di Bari. After graduating as a Structural Engineer at Politecnico di Bari, he took his PhD in Materials and Structural Engineering at the Trento University, working on smart materials at the AME Department of the University of Minnesota. After several periods as visiting researcher in prestigious European universities, he became researcher and then associate professor of Continuum Mechanics and Structural Engineering at Politecnico di Bari. He is a member of the Society of Natural Philosophy (SNP), International Society for the Interaction of Mechanics and Mathematics (ISIMM), and Italian Group of Mathematical Physics (GNFM). His research topics are in Continuum and Materials Mechanics with particular interests in the soft rubberlike and biological materials, active and smart materials, and metamaterials and smart structures.</p>
+          Giuseppe Puglisi is a full professor of Mathematical Physics at the Politecnico di Bari. After graduating as a Structural 
+            Engineer at Politecnico di Bari, he took his PhD in Materials and Structural Engineering at the Trento University, working 
+            on smart materials at the AME Department of the University of Minnesota. After several periods as visiting researcher in 
+            prestigious European universities, he became researcher and then associate professor of Continuum Mechanics and Structural 
+            Engineering at Politecnico di Bari. He is a member of the Society of Natural Philosophy (SNP), International Society for 
+            the Interaction of Mechanics and Mathematics (ISIMM), and Italian Group of Mathematical Physics (GNFM). His research topics 
+            are in Continuum and Materials Mechanics with particular interests in the soft rubberlike and biological materials, active
+             and smart materials, and metamaterials and smart structures.
         </div>
       </div>
 
@@ -160,7 +167,7 @@
 
     <button type="button" class="collapsible">Title: Damage, healing and residual strains in biological materials: from molecular to macroscopic scale</button>
     <div class="content">
-    <strong>Dipartimento di Scienze dell'Ingegneria Civile e Ambientale Politecnico di Bari, Bari, Italy</strong><br>
+    <strong>Dipartimento di Scienze dell'Ingegneria Civile e Ambientale Politecnico di Bari, Bari, Italy</strong><br><br>
     The comprehension of the role of mechanical forces at the molecular level represents nowadays the focus of 
     incredible efforts in many different research fields of Biology, Biomechanics, Material Engineering, Biomedical
     Sciences. Fundamental phenomena such as DNA and RNA hairpins unfolding and refolding in enzymatic activity,
@@ -190,7 +197,7 @@
           <img src="assets/Han.jpg" alt="Xu Han" style="width: 100%; height: auto;">
         </div>
         <div class="text-column">
-          <p> Dr. Han is a Professor in Mechanical Engineering and the President of Hebei University of Technology, 
+          Dr. Han is a Professor in Mechanical Engineering and the President of Hebei University of Technology, 
             China. His current research interests are mainly in numerical simulation-based engineering, optimization 
             design and reliability analysis. Professor Han has published more than 200 journal articles and 3 monographs. 
             He is the Associate Editor of ASME Journal of Mechanical Design, International Journal of Computational Methods, 
@@ -203,7 +210,7 @@
 
       <button type="button" class="collapsible">Title: Reliability modeling and error predicting for industrial robots</button>
       <div class="content">
-      <strong>State Key Laboratory of Reliability and Intelligence of Electrical Equipment, School of Mechanical Engineering, Hebei University of Technology, Tianjin, 300401, P. R. China</strong><br>
+      <strong>State Key Laboratory of Reliability and Intelligence of Electrical Equipment, School of Mechanical Engineering, Hebei University of Technology, Tianjin, 300401, P. R. China</strong><br><br>
         The industrial robot is composed of mechanical structure, drive system, control system and perception system. 
         The analysis of industrial robots involves reliability modeling, reliability design, reliability evaluation and 
         reliability experiment, making the reliability analysis process more complex and difficult than the traditional 
