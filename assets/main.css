@@ -420,7 +420,7 @@
         float: none; /* Remove float for smaller screens */
         width: 100%; /* Set the text column to use full container width */
         margin-top: 1em; /* Add space above the text column, if needed */
-        font-size:0.5em;
+        font-size:1em;
     }
     /* 修改下拉框 */
     .collapsible {
