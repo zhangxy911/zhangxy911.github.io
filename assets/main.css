@@ -193,6 +193,8 @@
     text-decoration: none;
     color: black; /* 你可以根据需要设置颜色 */
     border-bottom: 1px solid #ccc; /* 分隔线，可以根据需要更改 */
+    font-size:1em;
+    line-height:1.5em;
 }
 
 /* Style for the container div */
