@@ -303,6 +303,21 @@
 }
 
 
+.registration-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.registration-link {
+    margin-left: auto; /* This will push the link to the right */
+}
+
+.registration-image {
+    width: 20%;
+    height: auto;
+    margin-left: 80%;
+}
+
  /* My hacky way of making the site mobile-friendly */
  @media only screen and (max-width: 1100px) {
      body{
@@ -331,7 +346,7 @@
      table.footer{font-size:0.33em;}
      .banner {position: relative; font-family: 'Arial Black', Arial, sans-serif;font-weight: normal; width: 100%;height: auto; }
      .top-left {font-size:1.1em; color: #fafafa; line-height: 1.8em;text-align: center; width: 100%; height: 1.0em; position: absolute; padding: 1.0em 0 0 0; top: 0px;text-shadow: 0px 0px 6px #000000;}
-     .bottom-right {font-size:0.8em; color: rgb(250,156,62); line-height: 2em; width: 100%; height: 1.0em; padding: 0px 1.0em 5.0em 0px; text-align: center; position: absolute; bottom: 0px; text-shadow: 0px 0px 6px #000000;}
+     .bottom-right {font-size:0.8em; color: rgb(250,156,62); line-height: 1.5em; width: 100%; height: 1.0em; padding: 0px 1.0em 5.0em 0px; text-align: center; position: absolute; bottom: 0px; text-shadow: 0px 0px 6px #000000;}
      
 
     
@@ -422,6 +437,12 @@
     }
     /* 移动端organized */
     td.single img{width: 50%}
+
+    .registration-image {
+        width: 40%;
+        height: auto;
+        margin-left: 60%;
+    }
 
     }
  
