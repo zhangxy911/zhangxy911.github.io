@@ -215,7 +215,7 @@
     background-color: white;
     color: black;
     cursor: pointer;
-    padding: 1.1em;
+    padding: 0.5em;
     max-width: 100%;
     border: none;
     text-align: left;
@@ -263,6 +263,42 @@
     clear: both;
 }
 
+/* hotel two colume */
+/* Duplicated styles (you can customize as needed) */
+.duplicate-container {
+    width: 100%; /* Or any other width you need */
+    overflow: hidden; 
+}
+
+.duplicate-image-column  {
+    float: left; /* Float the image to the left */
+    width: 48%; /* Set the width for the image column */
+    margin-right: 1%; /* Add some space between the image and text */
+}
+
+.duplicate-text-column {
+    float: right; /* Float the text to the right */
+    width: calc(100% - 50%); /* Adjust the width of the text column, subtracting the width of the image column and margin */
+    text-align: justify; /* Justify the text at both ends */
+    font-size:1em;
+}
+
+.duplicate-clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* #############################底部背景 */
+.footer-background {
+    display: flex;          /* Enables flexbox */
+    justify-content: center; /* Horizontally centers content */
+    align-items: flex-end;   /* Aligns content vertically to the bottom */
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
 
  /* My hacky way of making the site mobile-friendly */
  @media only screen and (max-width: 1100px) {
@@ -282,9 +318,9 @@
 
      a{ color: #813c54; ; text-decoration:none;font-size:0.8em}    
 
-     h2{font-size:1em;}
-     h3{font-size:0.8em;line-height: 1.5em}
-     h4{font-size:0.6em;line-height: 1.2em}
+     h2{font-size:1.2em;}
+     h3{font-size:1em;line-height: 1.5em}
+     h4{font-size:0.8em;line-height: 1.2em}
      p{font-size:0.5em; line-height:1.5em;}
      th,td,tr{font-size:1.5em; line-height:1.5em;}
      td.date{font-size:1.5em; padding-top:0.5em;}
@@ -301,12 +337,19 @@
     }
 
     .nav-toggle {
-        display: block;
+        display: block;        
+        top: 0;
         /* 更多样式设置，比如位置、大小、背景等 */
+    }
+    .fas.fa-bars {
+        font-size: 30px; /* Adjust the size of the bars icon */
+        vertical-align: middle; /* Center icon vertically if needed */
     }
 
     .nav-dropdown {
         display: none;
+        font-size: 0.8em; /* Sets the font size */
+        line-height: 1em;
         /* 下拉菜单的样式 */
     }
 
@@ -320,10 +363,58 @@
 
     /* Style for tables within the .important-dates-container */
     .important-dates-container table {
-        /* width: 100%; */
+        width: 100%;
         border-collapse: collapse;
         font-size:0.5em;
         /* Add other table styles here */
+    }
+
+    .footer-background {
+        display: flex;          /* Enables flexbox */
+        justify-content: center; /* Horizontally centers content */
+        align-items: center;     /* Vertically centers content */
+        width: 100%;
+        height: 20%; /* Corrected the typo from '200x' to '200px' */
+        background-color: #f5f5f5; /* or any color you wish */
+        text-align: center; /* Ensures the text inside is centered if it wraps */
+    }
+
+    /* 移动端两列 */
+    .image-column {
+        float: none; /* Remove float for smaller screens */
+        width: 50%; /* Full width */
+        margin: 0 auto; 
+    }
+
+    .text-column {
+        float: none; /* Remove float for smaller screens */
+        width: 100%; /* Full width */
+        margin-top: 1em; /* Provide some space between the image and text */
+    }
+
+    .duplicate-image-column {
+        float: none; /* Remove float for smaller screens */
+        width: 70%; /* Set the width to use full container width */
+        margin: 0 auto; 
+    }
+
+    .duplicate-text-column {
+        float: none; /* Remove float for smaller screens */
+        width: 100%; /* Set the text column to use full container width */
+        margin-top: 1em; /* Add space above the text column, if needed */
+        font-size:0.5em;
+    }
+    /* 修改下拉框 */
+    .collapsible {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 0.5em;
+        max-width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 1em;
     }
 
     }
