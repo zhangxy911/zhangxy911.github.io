@@ -207,7 +207,7 @@
 
 /* Style for tables within the .important-dates-container */
 .important-dates-container table {
-    width: 100%;
+    width: 110%;
     border-collapse: collapse;
     line-height:2em;
     /* Add other table styles here */
