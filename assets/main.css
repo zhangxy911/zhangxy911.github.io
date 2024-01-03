@@ -121,7 +121,7 @@
     
 }
 
- td.navigation{font-size:1.1em; white-space:nowrap; width:auto; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;top: 0; background-color: #fff;z-index: 999}
+ td.navigation{font-size:1.3em; white-space:nowrap; width:auto; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;top: 0; background-color: #fff;z-index: 999}
  
  /* Sponsor Images */
  table.doubles{width:1000px;}
@@ -348,7 +348,7 @@
 
     .nav-dropdown {
         display: none;
-        font-size: 0.8em; /* Sets the font size */
+        font-size: 1em; /* Sets the font size */
         line-height: 1em;
         /* 下拉菜单的样式 */
     }
