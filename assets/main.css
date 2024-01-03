@@ -351,8 +351,8 @@
 
     .nav-dropdown {
         display: none;
-        font-size: 1em; /* Sets the font size */
-        line-height: 1em;
+        font-size: 1.2em; /* Sets the font size */
+        line-height: 1.2em;
         /* 下拉菜单的样式 */
     }
 
