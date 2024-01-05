@@ -130,10 +130,9 @@
  td.double{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
  td.double img{width: 60%}
 
- table.singles{width:100%;}
- td.single{white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
- td.single img{width: 25%}
-
+ table.singles_left{width:100%;}
+ td.single_left{white-space:nowrap; width:100%; text-align:left; vertical-align:middle; padding:0px 0px 0px 0px;}
+ td.single_left img{width: 80%}
  
 
  /* td.sponsor img{width: 100%} */
@@ -320,6 +319,7 @@
     margin-left: 80%;
 }
 
+
  /* My hacky way of making the site mobile-friendly */
  @media only screen and (max-width: 1100px) {
      body{
@@ -439,11 +439,16 @@
     }
     /* 移动端organized */
     td.single img{width: 50%}
+    td.single_left img{width: 100%}
 
     .registration-image {
         width: 40%;
         height: auto;
         margin-left: 60%;
+    }
+    .visa-app-img {
+        width: 40%; /* 重写宽度为100% */
+        height: auto; /* 保持高度自动 */
     }
 
     }
