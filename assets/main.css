@@ -130,6 +130,11 @@
  td.double{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
  td.double img{width: 60%}
 
+
+ table.singles{width:100%;}
+ td.single{white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+ td.single img{width: 25%}
+ 
  table.singles_left{width:100%;}
  td.single_left{white-space:nowrap; width:100%; text-align:left; vertical-align:middle; padding:0px 0px 0px 0px;}
  td.single_left img{width: 80%}
