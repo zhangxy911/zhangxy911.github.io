@@ -218,6 +218,8 @@
     /* border-collapse: collapse; */
     line-height:2em;
     border-collapse: collapse;
+    margin-left: auto;  /* Set left margin to auto */
+    margin-right: auto; /* Set right margin to auto */
     /* Add other table styles here */
 }
 
