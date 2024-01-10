@@ -489,13 +489,13 @@ img {
 
     .text-section {
         width: 100%; /* 图片和文字部分各占满整个容器宽度 */
-        text-align: justify; /* 文字两端对齐 */
-        padding: 10px; /* 维持原有的边界 */
+        text-align: left; /* 文字两端对齐 */
+        /* padding: 10px 20px 10px 20px; 在文字周围增加左右边界 */
     }
 
     .image-section {
         text-align: center; /* 图片水平居中 */
-        width: 60%;
+        width: 50%;
     }
 
 
