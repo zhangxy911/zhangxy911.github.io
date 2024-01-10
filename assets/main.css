@@ -328,6 +328,26 @@
 }
 
 
+.container {
+    display: flex;
+}
+
+.image-section {
+    flex: 1; /* 图片部分占据 1/5 的宽度 */
+    /* 根据需要调整图片样式，比如添加padding或margin */
+}
+
+.text-section {
+    flex: 4; /* 文字部分占据 4/5 的宽度 */
+    /* 根据需要调整文本样式 */
+}
+
+img {
+    width: 100%; /* 使图片充满整个image-section */
+    height: auto; /* 保持图片的宽高比 */
+}
+
+
  /* My hacky way of making the site mobile-friendly */
  @media only screen and (max-width: 1100px) {
     body{
