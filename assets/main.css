@@ -49,6 +49,7 @@
  h2{font-size:1.5em;}
  h3{font-size:1.4em;}
  h4{font-size:1.3em;}
+ h5{font-size:1.2em;}
  p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
  li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
  ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
@@ -327,17 +328,21 @@
     margin-left: 80%;
 }
 
-
+/* 左边照片，右边汉字 */
 .container {
     display: flex;
+    align-items: flex-start;
 }
 
 .image-section {
     width: 25%; /* 图片部分占据 20% 的宽度 */
+    align-self: center;
 }
 
 .text-section {
     width: 75%; /* 文字部分占据 80% 的宽度 */
+    padding: 10px 10px; /* 在文字周围增加左右边界 */
+    /* 可以调整 10px 为您希望的边界大小 */
 }
 
 img {
@@ -355,7 +360,7 @@ img {
        text-align:justify;
        /* font-family:'Roboto',sans-serif; */
        font-family:Arial, sans-serif;
-       font-size:0.8em;
+       font-size:1em;
        line-height:2em;
        margin: 40px auto;
        max-width: 1100px; /* 最大宽度为1000px */
@@ -365,11 +370,12 @@ img {
 
     h2{font-size:1.5em;}
     h3{font-size:1.2em;line-height: 1.5em}
-    h4{font-size:1em;line-height: 2em}
-    p{font-size:0.5em; line-height:1.5em;}
+    h4{font-size:1em;line-height: 1.3em}
+    h5{font-size:1em;line-height:1.5em;}
+    p{font-size:1em; line-height:1.5em;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
     td.date{font-size:1.5em; padding-top:0.5em;}
-    td.navigation{font-size:0.8em; padding:0px 20px 0px 20px;}
+    td.navigation{font-size:1em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
     .banner {position: relative; font-family: 'Arial Black', Arial, sans-serif;font-weight: normal; width: 100%;height: auto; }
     .top-left {font-size:1.1em; color: #fafafa; line-height: 1.7em;text-align: center; width: 100%; height: 1.0em; position: absolute; padding: 1.0em 0 0 0; top: 0px;text-shadow: 0px 0px 6px #000000;}
@@ -401,7 +407,6 @@ img {
        /* Style for the container div */
    .important-dates-container {
        background-color: #f5f5f5;
-       font-size:0.8em;
        /* padding: 10px;
        border-radius: 5px; */
        /* Add any additional styles you want for the container */
@@ -411,7 +416,7 @@ img {
    .important-dates-container table {
        width: 100%;
        /* border-collapse: collapse; */
-       /* font-size:0.5em; */
+       font-size:0.5em;
        /* Add other table styles here */
    }
 
@@ -476,6 +481,24 @@ img {
        width: 40%; /* 重写宽度为100% */
        height: auto; /* 保持高度自动 */
    }
+
+   .container {
+        flex-direction: column; /* 改为垂直布局 */
+    }
+
+
+    .text-section {
+        width: 100%; /* 图片和文字部分各占满整个容器宽度 */
+        text-align: justify; /* 文字两端对齐 */
+        padding: 10px; /* 维持原有的边界 */
+    }
+
+    .image-section {
+        text-align: center; /* 图片水平居中 */
+        width: 60%;
+    }
+
+
 
    }
 
