@@ -215,7 +215,7 @@
 
 /* Style for tables within the .important-dates-container */
 .important-dates-container table {
-    width:50%;
+    width:60%;
     /* border-collapse: collapse; */
     line-height:2em;
     border-collapse: collapse;
