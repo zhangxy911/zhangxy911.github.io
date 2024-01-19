@@ -19,24 +19,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <style>
-        .two-column {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
+        ul.custom-list {
+            list-style-type: none; /* 移除默认的列表标记 */
+            margin: 0;  /* 移除列表的外边距 */
+            padding: 0; /* 移除列表的内边距 */
+            width: 100%;
         }
-    
-        .left-column {
-            flex: 0 0 2ch;
-            text-align: center;
-            padding-right: 1em;
+
+        ul.custom-list li {
+            position: relative; /* 设置相对定位 */
+            padding-left: 30px; /* 在列表项左侧添加空间以显示星号 */
+            text-align: justify;
         }
-    
-        .right-column {
-            flex: 1;
-            line-height: 1.5em;
+
+        ul.custom-list li::before {
+            content: '•'; /* 在每个列表项前添加星号 */
+            color: black; /* 星号颜色 */
+            font-size: larger; /* 星号大小 */
+            position: absolute; /* 绝对定位星号 */
+            left: 0; /* 将星号定位到列表项的最左侧 */
         }
     </style>
-   
 
 </head>
 
@@ -147,37 +150,21 @@
     the field of mechanics and transport phenomena pertaining to various soft materials. The following list, while not exhaustive, provides an overview of the materials 
     of interest: <br>
 
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-        </div>
-        <div class="right-column">
-            Biomaterials<br>
-            Low-dimensional Energetic Materials<br>
-            Functional and Reactive Hydrogels<br>
-            Cement and Concrete<br>
-            Composite Materials and Layered Structures<br>
-            Electrochemical Materials<br>
-            Green Materials<br>
-            Ionic Liquids<br>
-            Mechano-biology<br>
-            Magnetic Materials<br>
-            Metamaterials<br>
-            Polymeric Liquids/Solids<br>
-        </div>
-    </div>
-
+    <ul class="custom-list">
+        <li>Biomaterials</li>
+        <li>Low-dimensional Energetic Materials</li>
+        <li>Functional and Reactive Hydrogels</li>
+        <li>Cement and Concrete</li>
+        <li>Composite Materials and Layered Structures</li>
+        <li>Electrochemical Materials</li>
+        <li>Green Materials</li>
+        <li>Ionic Liquids</li>
+        <li>Mechano-biology</li>
+        <li>Magnetic Materials</li>
+        <li>Metamaterials</li>
+        <li>Polymeric Liquids/Solids</li>
+        <br>     
+    </ul>
 
 
     <h4>MS02: Structural dynamic modeling, analysis and control</h4>
@@ -188,25 +175,16 @@
      control should be carried out. This mini-symposium aims to provide a platform for experts and scholars to share their latest academic developments 
      and new insights in dynamic modeling, dynamic analysis method, as well as the dynamic control of structures. The research contents include but 
      are not limited to:<br>
-     <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-        </div>
-        <div class="right-column">
-            Mode theory and its application in dynamic modeling<br>
-            Model condensation of structures in dynamic analysis<br>
-            Dynamic behaviors of structures under fluid-structure interaction<br>
-            Dynamic behaviors of plates and shells<br>
-            Passive or active vibration control of structures<br>
-            Finite element analysis of structures<br>
-        </div>
-    </div>
 
+    <ul class="custom-list">
+        <li>Mode theory and its application in dynamic modeling</li>
+        <li>Model condensation of structures in dynamic analysis</li>
+        <li>Dynamic behaviors of structures under fluid-structure interaction</li>
+        <li>Dynamic behaviors of plates and shells</li>
+        <li>Passive or active vibration control of structures</li>
+        <li>Finite element analysis of structures</li>
+        <br>     
+    </ul>
 
 
     <h4>MS03: Theme area: structural acoustics and vibration</h4>
@@ -215,24 +193,17 @@
     optimization of structural acoustics and vibration systems. These topics include, but are not limited to, emerging methods in 
     mechanical system design, vibration control, vibro-acoustics, rotordynamics, recent developments in numerical methods 
     (finite volumes, boundary element methods, spectro-geometric method, isogeometric analysis). The topics include but not limit to:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-        </div>
-        <div class="right-column">
-            Structural acoustics and vibration<br>
-            Numerical methods in vibro-acoustics<br>
-            Application of vibro-acoustics methods to noise control<br>
-            Rotordynamics<br>
-            Microperforated materials<br>
-            Room acoustics modeling and simulation<br>
-        </div>
-    </div>
+
+
+    <ul class="custom-list">
+        <li>Structural acoustics and vibration</li>
+        <li>Numerical methods in vibro-acoustics</li>
+        <li>Application of vibro-acoustics methods to noise control</li>
+        <li>Rotordynamics</li>
+        <li>Microperforated materials</li>
+        <li>Room acoustics modeling and simulation</li>
+        <br>     
+    </ul>
 
 
     <h4>MS04: Advanced theories and models for engineering materials and structures</h4>
@@ -242,29 +213,18 @@
     engineering materials and structures, including micro/nano materials, mechanical metamaterials, porous composites etc. This symposium focuses 
     on the development of new theories and methods in theoretical and numerical scopes and models for the related mechanical problems in advanced 
     engineering materials and structures. Topics of interests include but are not limited to:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-        </div>
-        <div class="right-column">
-            The new developments of higher-order continuum theory<br>
-            The new applications of theoretical and computational models in micro/nano mechanics<br>
-            The new applications of theoretical and computational models in metamaterials<br>
-            The new applications of theoretical and computational models in cellular/porous materials<br>
-            The new applications of theoretical and computational models in structures with cutouts<br>
-            The new theoretical and computational models in lightweight nanomaterials reinforced composites<br>
-            Machine-learning-based inverse design of mechanical metamaterials<br>
-            Other new developed numerical methods<br> 
-        </div>
-    </div>
-
+    
+    <ul class="custom-list">
+        <li>The new developments of higher-order continuum theory</li>
+        <li>The new applications of theoretical and computational models in micro/nano mechanics</li>
+        <li>The new applications of theoretical and computational models in metamaterials</li>
+        <li>The new applications of theoretical and computational models in cellular/porous materials</li>
+        <li>The new applications of theoretical and computational models in structures with cutouts</li>
+        <li>The new theoretical and computational models in lightweight nanomaterials reinforced composites</li>
+        <li>Machine-learning-based inverse design of mechanical metamaterials</li>
+        <li>Other new developed numerical methods</li>
+        <br>     
+    </ul>
     
 
 
@@ -275,24 +235,17 @@
     of which the vibration and control are currently hot topics in the dynamics of intelligent materials structures with small size.  
     The purpose of this minisymposium is to provide an opportunity for communication and discussion on recent advances in the field of
      vibration and control of micro/nano-scaled materials and structures.  The topics include but are not limited to:<br>
-     <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br><br>
-            •<br>
-            •<br>
-            •<br>
-        </div>
-        <div class="right-column">
-            Theoretical modelling for vibration and control of micro/nano-scaled materials and structures<br>
-            Nonlinear vibration and stability of motion of micro/nano-scaled materials and structures<br>
-            Vibration and control of piezoelectric micro/nano-materials and nano-material reinforced functionally graded composite structures<br>
-            Electro-mechanical coupling behaviors of multi-layered micro/nano-scaled dielectric structures<br>
-            Numerical methods for vibration and control of micro/nano-scaled materials and structures<br>
-            Atomic simulation, multi-scale calculation, testing technique and their applications in analyses of micro/nano-scaled materials and structures<br> 
-        </div>
-    </div>
+
+    <ul class="custom-list">
+        <li>Theoretical modelling for vibration and control of micro/nano-scaled materials and structures</li>
+        <li>Nonlinear vibration and stability of motion of micro/nano-scaled materials and structures</li>
+        <li>Vibration and control of piezoelectric micro/nano-materials and nano-material reinforced functionally graded composite structures</li>
+        <li>Electro-mechanical coupling behaviors of multi-layered micro/nano-scaled dielectric structures</li>
+        <li>Numerical methods for vibration and control of micro/nano-scaled materials and structures</li>
+        <li>Atomic simulation, multi-scale calculation, testing technique and their applications in analyses of micro/nano-scaled materials and structures</li>
+        <br>     
+    </ul>
+
 
     <h4>MS06: Modeling via experimental and numerical techniques</h4>
     <strong>Organizers: </strong><strong>Kim Meow Liew</strong>, City University of Hong Kong, Kowloon, Hong Kong<br><br>
@@ -300,37 +253,22 @@
     The understanding of materials functionality and mechanical behaviors of structures and materials are essential in product design and optimization. 
     This mini symposium plays the role to gather academia and professional communities to share their latest research developments in experimental and numerical modeling,
      new design concept and advanced 3D printing technology in, but not limited to:<br>
-     <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-        </div>
-        <div class="right-column">
-            Aerospace engineering<br>
-            Biomedical engineering<br>
-            Civil and structural engineering<br>
-            Concrete and cement composites<br>
-            Electronic and electrical engineering<br>
-            Fire science and engineering<br>
-            Fluids and bubble mechanics<br>
-            Materials science and engineering<br>
-            Mechanical and manufacturing engineering<br>
-            Ocean and offshore engineering<br>
-            Railway engineering<br>
-            System and control engineering<br>
-               
-        </div>
-    </div>   
+ 
+    <ul class="custom-list">
+        <li>Aerospace engineering</li>
+        <li>Biomedical engineering</li>
+        <li>Civil and structural engineering</li>
+        <li>Concrete and cement composites</li>
+        <li>Electronic and electrical engineering</li>
+        <li>Fire science and engineering</li>
+        <li>Fluids and bubble mechanics</li>
+        <li>Materials science and engineering</li>
+        <li>Mechanical and manufacturing engineering</li>
+        <li>Ocean and offshore engineering</li>
+        <li>Railway engineering</li>
+        <li>System and control engineering</li>
+        <br>     
+    </ul>
     Other research topics/areas in modeling through experimental, theoretical, and computational procedures are also welcome.<br>
 
 
@@ -345,53 +283,34 @@
     for accurately predicting and interpreting the behavior of such hybrid structures. This mini-symposium aims to bring together leading researchers
     at the forefront of numerical modeling of FRP-concrete hybrid structures. In addition, it provides a platform for interested researchers to discuss
      future directions and build up interdisciplinary collaborations. Topics of interest include, but are not limited to numerical modelling of:<br>
-     <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-            •<br>            
-        </div>
-        <div class="right-column">
-            FRP-concrete-steel hybrid structures<br>
-            FRP-reinforced/strengthened concrete structures<br>
-            Seawater sea-sand concrete (SSC) materials and structures;<br>
-            Filament wound FRP tube-confined concrete<br>
-            Concrete filled FRP tubular (CFFT) structures<br>
-            FRP-recycled concrete structures<br> 
-            FRP-UHPC/ECC structures<br>
-        </div>
-    </div>   
+    
+    <ul class="custom-list">
+        <li>FRP-concrete-steel hybrid structures</li>
+        <li>FRP-reinforced/strengthened concrete structures</li>
+        <li>Seawater sea-sand concrete (SSC) materials and structures</li>
+        <li>Filament wound FRP tube-confined concrete</li>
+        <li>Concrete filled FRP tubular (CFFT) structures</li>
+        <li>FRP-recycled concrete structures</li>
+        <li>FRP-UHPC/ECC structures</li>
+        <br>     
+    </ul>
     
 
     <h4>MS08: Multiscale modeling of mechanical behaviors of advanced materials and structures</h4>
     <strong>Organizers: </strong><strong>Guoxin Cao</strong>, Zhejiang University<br><br>
     
     This mini-symposium will primarily focus on the mechanical behavior of advanced materials and structures based upon multiscale modeling approaches, including but not limited to the following topics:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-            •<br>            
-        </div>
-        <div class="right-column">
-           Numerical modeling of mechanical behavior of Low-dimensional materials<br>
-           Modeling and analysis of characterizing approach at small scales<br>
-           Nano-indentations and pressure bulge testing models and analysis;<br>
-           Modeling and analysis of interface<br>
-           Solid-liquid coupling behavior at nanoscale<br>
-           Modeling and analysis of mechanical behavior of nanocomposies<br> 
-           Multiscale modeling of other physical behaviors of Low-dimensional materials<br>
-        </div>
-    </div>   
-    
+
+    <ul class="custom-list">
+        <li>Numerical modeling of mechanical behavior of Low-dimensional materials</li>
+        <li>Modeling and analysis of characterizing approach at small scales</li>
+        <li>Nano-indentations and pressure bulge testing models and analysis</li>
+        <li>Modeling and analysis of interface</li>
+        <li>Solid-liquid coupling behavior at nanoscale</li>
+        <li>Modeling and analysis of mechanical behavior of nanocomposies</li>
+        <li>Multiscale modeling of other physical behaviors of Low-dimensional materials</li>
+        <br>     
+    </ul>
 
     <h4>MS09: Peridynamic theory and multiphysical/multiscale Methods for complex material behavior</h4>
     <strong>Organizers: </strong><strong>Xin Lai</strong>, Wuhan University of Technology<br><br>
@@ -400,48 +319,29 @@
     In the aspect of the capability to describe discontinuities and discrete, non-local theories show their advantage compared to the classical continuum 
     mechanics. This mini-symposium aims to gather academics and practitioners to present their ideas and potential solutions on emerging topics in theoretical 
     modeling of diverse material failure using non-local theories, including but not limited to Peridynamics. Topics of interest include, but not limited to:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>         
-        </div>
-        <div class="right-column">
-            Peridynamic theory and models for material failure in extreme condition<br>
-            Peridynamic theory and algorithm for complex fracture<br>
-            Peridynamic theory and applications for beam, plate, and shells<br>
-            Peridyanmic theory and its numerical implementation and commercialization<br>
-            Peridynamics in relation to AI and machine learning<br>
-            Coupling Peridynamics with Finite Element Method<br>
-            Coupling Peridynamics with Smooth Particle Hydrodynamics<br>
-            Coupling Peridynamics with Molecular Dynamics<br>
-            Coupling Peridynamics with Continuum Mechanics<br>
-            Coupling Peridynamics with Phase Field<br>
-            Coupling Peridynamics with Lattice Boltzmann Method<br>
-            Mathematical analysis<br>
-            Mechanics of random media<br>
-            Material model development<br>
-            Multiphysics and chemistry<br>
-            Microstructural evolution, materials processing, and grain growth<br>
-            Modeling manufacturing processes<br>
-        </div>
-    </div>   
+ 
+    <ul class="custom-list">
+        <li>Peridynamic theory and models for material failure in extreme condition</li>
+        <li>Peridynamic theory and algorithm for complex fracture</li>
+        <li>Peridynamic theory and applications for beam, plate, and shells</li>
+        <li>Peridyanmic theory and its numerical implementation and commercialization</li>
+        <li>Peridynamics in relation to AI and machine learning</li>
+        <li>Coupling Peridynamics with Finite Element Method</li>
+        <li>Coupling Peridynamics with Smooth Particle Hydrodynamics</li>
+        <li>Coupling Peridynamics with Molecular Dynamics</li>
+        <li>Coupling Peridynamics with Continuum Mechanics</li>
+        <li>Coupling Peridynamics with Phase Field</li>
+        <li>Coupling Peridynamics with Lattice Boltzmann Method</li>
+        <li>Mathematical analysis</li>
+        <li>Mechanics of random media</li>
+        <li>Material model development</li>
+        <li>Multiphysics and chemistry</li>
+        <li>Microstructural evolution, materials processing, and grain growth</li>
+        <li>Modeling manufacturing processes</li>
+  
+    </ul>
     We seek a lively exchange of ideas about the topics/areas in modeling through experimental, theoretical, and computational procedures. 
-    Papers on all aspects of Peridynamics are welcome.<br>
+    Papers on all aspects of Peridynamics are welcome.<br><br>
 
 
     <h4>MS10: Small-scale energy harvesters: design, modeling, and applications</h4>
@@ -453,61 +353,37 @@
     of battery replacement, lower the environmental pollution caused by chemical batteries, and even replace batteries, has garnered widespread attention and research.
     This session aims to bring together researchers to present their latest findings in energy harvesting research, exchange ideas, and develop new collaborations. 
     The topics include (but are not limited to):<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-            •<br>
-            •<br>               
-            •<br>               
-            •<br>               
-        </div>
-        <div class="right-column">
-            New design and materials of energy harvesters<br>
-            Vibration/flow energy harvesting mechanism<br>
-            Modeling and optimization methods for energy harvesters<br>
-            Energy harvesting interface circuit and energy storage<br>
-            Innovations and case studies in energy harvesting applications<br>
-            Biological energy harvesting<br>
-            Applications of energy harvesters<br>
-            Modeling and analysis of nonlinear energy harvesters<br>
-            Nonlinear phenomena in energy harvesters, such as bifurcations, chaos, and resonance<br>
-        </div>
-    </div>   
-
+  
+    <ul class="custom-list">
+        <li>New design and materials of energy harvesters</li>
+        <li>Vibration/flow energy harvesting mechanism</li>
+        <li>Modeling and optimization methods for energy harvesters</li>
+        <li>Energy harvesting interface circuit and energy storage</li>
+        <li>Innovations and case studies in energy harvesting applications</li>
+        <li>Biological energy harvesting</li>
+        <li>Applications of energy harvesters</li>
+        <li>Modeling and analysis of nonlinear energy harvesters</li>
+        <li>Nonlinear phenomena in energy harvesters, such as bifurcations, chaos, and resonance</li>
+        <br>     
+    </ul>
     <h4>MS11: Dynamics and control of advanced structures</h4>
     <strong>Organizers: </strong><strong>Lifeng Wang</strong>, Nanjing University of Aeronautics and Astronautics<br><br>
     
     The aim of this mini-symposium is to bring together experts in the field of vibration, dynamics and control in advanced structures, such as 
     metamaterials and micro/nano structures, to exchange their recent research results and to discuss advances in the theory, experiment and 
     computational methods of advanced structures. The topics include (but not limit to):<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-            •<br>
-            •<br>               
-            •<br>                          
-        </div>
-        <div class="right-column">
-            Application of metamaterials for vibration and control <br>
-            Wave propagation in micro/nano structures <br>
-            Wave propagation and wave control of metamaterials<br>
-            Vibration of micro/nano structures<br>
-            Continuum model of micro/nano structures<br>
-            Numerical methods of micro/nano structures <br>
-            Molecular dynamics methods for nano structures<br>
-            Experiment study for dynamics of micro/nano structures<br>
-
-        </div>
-    </div>   
-
+   
+    <ul class="custom-list">
+        <li>Application of metamaterials for vibration and control</li>
+        <li>Wave propagation in micro/nano structures</li>
+        <li>Wave propagation and wave control of metamaterials</li>
+        <li>Vibration of micro/nano structures</li>
+        <li>Continuum model of micro/nano structures</li>
+        <li>Numerical methods of micro/nano structures</li>
+        <li>Molecular dynamics methods for nano structures</li>
+        <li>Experiment study for dynamics of micro/nano structures</li>
+        <br>     
+    </ul>
     <h4>MS12: Nonlinear vibrations of composite materials and structures under multi-field</h4>
     <strong>Organizers: </strong><strong>Hulun Guo</strong>, Tianjin University; <strong>Jianfei Wang</strong>, Beijing University of Technology; <strong>Liaoliang Ke</strong>, Tianjin University<br><br>
     
@@ -519,24 +395,15 @@
      essentially nonlinear vibrations among different scientific communities all around the world. The purpose of this 
      minisymposium is to provide an opportunity for communication and discussion on recent advances in this research 
      field. The scope of this section inculudes:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>                                     
-        </div>
-        <div class="right-column">
-            Linear and nonlinear vibrations of composite materials<br>  
-            Multi-scale dynamics of composite materials<br>  
-            Nonlinear dynamics of composite structures in thermal environment<br>  
-            Flutter and nonlinear aeroelasticity of composite structures in fluid environment<br>  
-            Experimental measurements of composite materials in dynamic environments<br>  
 
-
-        </div>
-    </div>   
+    <ul class="custom-list">
+        <li>Linear and nonlinear vibrations of composite materials</li>
+        <li>Multi-scale dynamics of composite materials</li>
+        <li>Nonlinear dynamics of composite structures in thermal environment</li>
+        <li>Flutter and nonlinear aeroelasticity of composite structures in fluid environment</li>
+        <li>Experimental measurements of composite materials in dynamic environments</li>
+        <br>     
+    </ul>
 
     <h4>MS13: Advancements in transportation infrastructure: durability, sustainability, and resilience</h4>
     <strong>Organizers: </strong><strong>Guoyang LU</strong>, City University of Hong Kong, Kowloon, Hong Kong<br><br>
@@ -545,34 +412,20 @@
     aims to show the latest research advancements in pavement materials and structures, and exchange ideas on various approaches
      to the evaluation and prediction of pavement performances. It will promote linkages and interactions between material 
      characterization methods, mechanistic modeling, and empirical predictions. The topics of interest include but not limited to:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br> 
-            •<br>
-            •<br>
-            •<br>
-            •<br>                                     
-        </div>
-        <div class="right-column">
-            Advances in pavement analysis and design methodologies <br>  
-            Advances in smart and non-traditional roadways and runways<br>  
-            AI and machine learning technologies in pavement engineering and performance prediction<br>  
-            Chemo-mechanical and other tools for performance evaluation of asphalt binders<br>  
-            Materials testing and performance modelling: calibration, verification, and validation<br>  
-            Modeling and experimental evaluation of moisture damage in asphalt mixtures<br>  
-            Multiscale modeling of pavement materials and structures<br>  
-            New types of green pavement materials<br>  
-            Pavements and climate change: adaptation/resilience and mitigation/embodied carbon footprint<br>  
+    
+    <ul class="custom-list">
+        <li>Advances in pavement analysis and design methodologies</li>
+        <li>Advances in smart and non-traditional roadways and runways</li>
+        <li>AI and machine learning technologies in pavement engineering and performance prediction</li>
+        <li>Chemo-mechanical and other tools for performance evaluation of asphalt binders</li>
+        <li>Materials testing and performance modelling: calibration, verification, and validation</li>
+        <li>Modeling and experimental evaluation of moisture damage in asphalt mixtures</li>
+        <li>Multiscale modeling of pavement materials and structures</li>
+        <li>New types of green pavement materials</li>
+        <li>Pavements and climate change: adaptation/resilience and mitigation/embodied carbon footprint</li>
 
-
-
-        </div>
-    </div>  
-
+        <br>     
+    </ul>
     <h4>MS14: Modeling and optimization of smart materials and structures</h4>
     <strong>Organizers: </strong><strong>Xia Liu</strong>, Beijing University of Technology; <strong>Qingsheng Yang</strong>, Beijing University of Technology; <strong>Hongling Ye</strong>, Beijing University of Technology <br><br>
     
@@ -584,7 +437,7 @@
      tuning, multifunctional mechanisms, mechanical methods, and applications of composite materials and structures are welcome to be 
      discussed in the conference. Structural functions include mechanical properties like strength, stiffness, fracture toughness, and 
      damping, while non-structural functions include electrical and/or thermal conductivity, sensing and actuation, energy harvesting/storage, 
-     self-healing capability, and so on.<br>
+     self-healing capability, and so on.<br><br> 
 
 
 
@@ -608,36 +461,23 @@
     arteries, microcapillaries, tissue growth, morphogenesis, patient-specific treatments, and targeted drug delivery.<br>
     Contributions in the following areas are especially encouraged:<br>
 
-    <div class="two-column">
-        <div class="left-column">
-            •<br><br><br><br>
-            •<br><br><br>
-            •<br><br>
-            •<br><br>
-            •<br> <br>
-                                
-        </div>
-        <div class="right-column">
-            <strong>Development of Novel Algorithms: </strong>This involves creating new numerical, AI-based and hybrid data-driven based frameworks aimed at enhancing the simulation of 
-            biological processes. These models include molecular dynamics, meshfree, particle methods, virtual elements, finite elements, phase field methods and AI-based 
-            algorithms for solving biomedical problems at cellular, tissue, organ, and system levels.<br>
 
-            <strong>Innovative Applications in Computational Biomechanics: </strong>Pioneering applications of these numerical methods within computational biomechanics, specifically in 
-            biosolid and biofluid mechanics, as well as in understanding fluid-structure interactions.<br>
-            <strong>Computational Modelling of Coupled Phenomena: </strong>Exploring computational modelling of interconnected multiphysics and multifield phenomena within biomedical 
-            engineering and biomechanics.<br>
-            <strong>Advanced Numerical Methods for Multiscale Linking: </strong>Advancing numerical methods to bridge mechanics across various scales, spanning cellular, tissue, organ, 
-            and system levels.<br>
-            <strong>Experimental and Clinical Validation: </strong>Investigating experimental and clinical validation of numerical methods, along with the integration of AI techniques 
-            with conventional numerical methods.<br>
+    <ul class="custom-list">
+        <li><strong>Development of Novel Algorithms: </strong>This involves creating new numerical, AI-based and hybrid data-driven based frameworks aimed at enhancing the simulation of biological processes. These models include molecular dynamics, meshfree, particle methods, virtual elements, finite elements, phase field methods and AI-based algorithms for solving biomedical problems at cellular, tissue, organ, and system levels.</li>
 
-
-
-        </div>
-    </div>  
+        <li><strong>Innovative Applications in Computational Biomechanics: </strong>Pioneering applications of these numerical methods within computational biomechanics, specifically in biosolid and biofluid mechanics, as well as in understanding fluid-structure interactions.</li>
+        
+        <li><strong>Computational Modelling of Coupled Phenomena: </strong>Exploring computational modelling of interconnected multiphysics and multifield phenomena within biomedical engineering and biomechanics.</li>
+        
+        <li><strong>Advanced Numerical Methods for Multiscale Linking: </strong>Advancing numerical methods to bridge mechanics across various scales, spanning cellular, tissue, organ, and system levels.</li>
+        
+        <li><strong>Experimental and Clinical Validation: </strong>Investigating experimental and clinical validation of numerical methods, along with the integration of AI techniques with conventional numerical methods.</li>
+    
+         
+    </ul>
     This mini-symposium is particular suitable for researchers in the field of computational mechanics with interest in biomedical applications. 
     It aims to foster a comprehensive understanding of these advanced numerical tools, highlighting their pivotal role in enhancing biomedical engineering 
-    solutions across various domains and applications.
+    solutions across various domains and applications.<br> <br> 
 
     <h4>MS16: Numerical methods theory and applications</h4>
     <strong>Organizers: </strong><strong>Yumin Cheng</strong>, Shanghai University; <strong>Miaojuan Peng</strong>, Shanghai University; 
@@ -650,24 +490,16 @@
     applications in numerical methods should be studied. This minisymposium is devoted to discuss recent developments 
     of numerical methods in aspects of mathematical theory, software and applications in mechanics and other related 
     engineering fields. Potential topics include, but are not limited to:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>                    
-        </div>
-        <div class="right-column">
-            Mathematical theories of numerical methods<br>
-            New or improved numerical methods<br>
-            Numerical methods for large deformation, polymer gel and other nonlinear problems<br>
-            Software or program of numerical methods<br>
-            Applications of numerical methods for complicated engineering problems<br>
-            Other topics in numerical methods<br>
-        </div>
-    </div>   
+    
+    <ul class="custom-list">
+        <li>Mathematical theories of numerical methods</li>
+        <li>New or improved numerical methods</li>
+        <li>Numerical methods for large deformation, polymer gel and other nonlinear problems</li>
+        <li>Software or program of numerical methods</li>
+        <li>Applications of numerical methods for complicated engineering problems</li>
+        <li>Other topics in numerical methods</li>
+        <br>     
+    </ul>
 
     <h4>MS17: Advanced modeling of concrete materials and structures</h4>
     <strong>Organizers: </strong><strong>Jian-Guo Dai</strong>, City University of Hong Kong; <strong>Zhao Wang</strong>, University of Tokyo;
@@ -679,34 +511,21 @@
     constitutive laws are needed to describe the behaviors at each level. This mini-symposium aims to showcase the latest research 
     advances in modeling of concrete materials and structures at the above-mentioned multiple scales. In addition, it facilitates a 
     platform for researchers to discuss future directions and build up potential collaborations. Topics of interest include, but are not limited to:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-            •<br>
-            •<br>               
-            •<br>               
-            •<br>               
-            •<br>               
-        </div>
-        <div class="right-column">
-            Nano-modified cementitious composites<br>
-            Fiber-reinforced cementitious composites<br>
-            FRP-reinforced/strengthened concrete structures<br>
-            Seawater seasand concrete (SSC) materials and structures<br>
-            Recycled aggregate concrete<br>
-            Low-carbon cement and concrete systems<br>
-            Molecular dynamics simulations<br>
-            Meso-scale modeling<br>
-            Finite element modeling<br>
-            Other advanced computational modeling techniques for concrete materials/structures <br>
+   
+    <ul class="custom-list">
+         <li>Nano-modified cementitious composites</li>
+        <li>Fiber-reinforced cementitious composites</li>
+        <li>FRP-reinforced/strengthened concrete structures</li>
+        <li>Seawater seasand concrete (SSC) materials and structures</li>
+        <li>Recycled aggregate concrete</li>
+        <li>Low-carbon cement and concrete systems</li>
+        <li>Molecular dynamics simulations</li>
+        <li>Meso-scale modeling</li>
+        <li>Finite element modeling</li>
+        <li>Other advanced computational modeling techniques for concrete materials/structures</li>
 
-        </div>
-    </div>
-
+        <br>     
+    </ul>
     <h4>MS18: Multiscale/multiphysics modeling and simulation of advanced materials and structures</h4>
     <strong>Organizers: </strong><strong>Yan Liu</strong>, Tsinghua University; <strong>Yonggang Zheng</strong>, Dalian University of Technology;
     <strong>Wenshan Yu</strong>, Xi'an Jiaotong University; <strong>Huadong Yong</strong>, Lanzhou University; <strong>Qingcheng Yang</strong>, Shanghai University<br><br>
@@ -716,35 +535,22 @@
     advanced materials and structures. Novel multiscale and multiphysics modeling and simulation methods are greatly desired. This minisymposium aims at 
     providing a platform for the researchers in the field of multiscale and multiphysics modeling and simulation to share their latest research observation 
     and novel ideas. The minisymposium includes but is not limited to the following topics:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-            •<br>
-            •<br>               
-            •<br>               
-            •<br>               
-            •<br>               
-            •<br>               
-        </div>
-        <div class="right-column">
-            Molecular dynamics and other molecular simulation methods for mechanics and materials<br> 
-            Coarse graining of molecular simulation<br> 
-            Coupling methods of molecular simulation and continuum-based simulation<br> 
-            Coupling methods of fluid-structure-thermal interaction<br> 
-            Coupling methods of electric field, magnetic field and deformation field<br> 
-            Coupling methods of chemical reaction and deformation of material and structure<br> 
-            Meshfree particle methods (SPH method, material point method, peridynamics, etc.)<br> 
-            Advanced modeling methods for complex structures<br> 
-            Modeling and simulation for the interface<br> 
-            Multiscale and multiphysics simulation for problems with extreme conditions<br> 
-            Other topics related to multiscale and multiphysics modeling and simulation<br> 
-        </div>
-    </div>
+    
+    <ul class="custom-list">
+        <li>Molecular dynamics and other molecular simulation methods for mechanics and materials</li>
+        <li>Coarse graining of molecular simulation</li>
+        <li>Coupling methods of molecular simulation and continuum-based simulation</li>
+        <li>Coupling methods of fluid-structure-thermal interaction</li>
+        <li>Coupling methods of electric field, magnetic field and deformation field</li>
+        <li>Coupling methods of chemical reaction and deformation of material and structure</li>
+        <li>Meshfree particle methods (SPH method, material point method, peridynamics, etc.)</li>
+        <li>Advanced modeling methods for complex structures</li>
+        <li>Modeling and simulation for the interface</li>
+        <li>Multiscale and multiphysics simulation for problems with extreme conditions</li>
+        <li>Other topics related to multiscale and multiphysics modeling and simulation</li>
 
+        <br>     
+    </ul>
     <h4>MS19: Reliability analysis theory and optimization methods</h4>
     <strong>Organizers: </strong><strong>Peng Hao</strong>, Dalian University of Technology; <strong>Jie Liu</strong>, Hunan University; 
     <strong>Lei Wang</strong>, Beihang University; <strong>Zeng Meng</strong>, Hefei University of Technology; 
@@ -757,29 +563,18 @@
     optimization method in reliability should be studied. This minisymposium is devoted to discuss recent developments of reliability theory 
     in aspects of uncertainty quantification method, structural optimization method and applications in mechanics and other related engineering 
     fields. Potential topics include, but are not limited to:<br>
-    <div class="two-column">
-        <div class="left-column">
-            •<br>
-            •<br>
-            •<br>
-            •<br>
-            •<br>            
-            •<br>
-            •<br>               
-                        
-        </div>
-        <div class="right-column">
-            Physics-based data-driven modeling and uncertainty quantification <br>
-            Uncertainty quantification and reliability analysis in engineering<br>
-            Quantifying epistemic uncertainties for computational predictions<br>
-            Validation under uncertainty: Novel methods, metrics, and applications<br>
-            Novel verification techniques for predictive computational simulations<br>
-            Uncertainty quantification in structural dynamics<br>
-            Quantifying epistemic uncertainties for simulations<br>
-
-        </div>
-    </div>
-
+   
+    <ul class="custom-list">
+        <li>Physics-based data-driven modeling and uncertainty quantification</li>
+        <li>Uncertainty quantification and reliability analysis in engineering</li>
+        <li>Quantifying epistemic uncertainties for computational predictions</li>
+        <li>Validation under uncertainty: Novel methods, metrics, and applications</li>
+        <li>Novel verification techniques for predictive computational simulations</li>
+        <li>Uncertainty quantification in structural dynamics</li>
+        <li>Quantifying epistemic uncertainties for simulations</li>
+    
+        <br>     
+    </ul>
     <!-- <button type="button" class="collapsible"><h4>+ MS02: Numerical Simulation of Micro-/Nano-Structures and Interfaces Modeling</h4></button>
     <div class="content">
         <strong>Organizers:</strong><br>
