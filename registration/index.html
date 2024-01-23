@@ -26,19 +26,31 @@
             padding: 0; /* 移除列表的内边距 */
             width: 100%;
         }
-
-        ul.custom-list li {
+    
+        ul.custom-list li.star {
             position: relative; /* 设置相对定位 */
             padding-left: 30px; /* 在列表项左侧添加空间以显示星号 */
-            text-align: justify;
         }
-
-        ul.custom-list li::before {
+    
+        ul.custom-list li.star::before {
             content: '*'; /* 在每个列表项前添加星号 */
             color: black; /* 星号颜色 */
             font-size: larger; /* 星号大小 */
             position: absolute; /* 绝对定位星号 */
             left: 0; /* 将星号定位到列表项的最左侧 */
+        }
+    
+        ul.custom-list li.hash {
+            position: relative; /* 设置相对定位 */
+            padding-left: 30px; /* 在列表项左侧添加空间以显示井号 */
+        }
+    
+        ul.custom-list li.hash::before {
+            content: '#'; /* 在每个列表项前添加井号 */
+            color: black; /* 井号颜色 */
+            font-size: larger; /* 井号大小 */
+            position: absolute; /* 绝对定位井号 */
+            left: 0; /* 将井号定位到列表项的最左侧 */
         }
     </style>
 
@@ -137,12 +149,13 @@
     </picture>
     
     <ul class="custom-list">
-        <li>The registration fee <strong>DOES NOT</strong> cover the traveling fee and hotel fee.</li>
-        <li>Student delegates include only <strong>enrolled Undergraduate, Master and Ph.D.</strong>, who are required to provide <strong>Student ID Cards</strong> for registration. </li>
-        <li>One registration per presentation. If multiple papers are accepted for presentation, each paper requires a separate registration fee. </li>
-        <li>Multiple submissions of the same author will be accepted; however, one registration is limited to one submission. </li>
-        <li>This is an international conference, we provide <strong>only INVOICE, not the FAPIAO</strong>. </li>
-        <li><strong style="color: rgb(0, 109, 190);">Refund policy: All paid registration fee is non refundable.</strong></li>
+        <li class="star">The registration fee <strong>DOES NOT</strong> cover the traveling fee and hotel fee.</li>
+        <li class="star">One registration per presentation. If multiple papers are accepted for presentation, each paper requires a separate registration fee. </li>
+        <li class="star">Multiple submissions of the same author will be accepted; however, one registration is limited to one submission. </li>
+        <li class="star">This is an international conference, we provide <strong>only INVOICE, not the FAPIAO</strong>. </li>
+        <li class="star"><strong style="color: rgb(0, 109, 190);">Refund policy: All paid registration fee is non refundable.</strong></li>
+        <li class="hash">Student delegates include only <strong>enrolled Undergraduate, Master and Ph.D.</strong>, who are required to provide <strong>Student ID Cards</strong> for registration. </li>
+        
         <br>     
     </ul>
 
