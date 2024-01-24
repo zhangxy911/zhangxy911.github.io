@@ -59,30 +59,32 @@
 
     <style>
         ol.circle-list {
-            list-style-type: none; /* Removes the default list style */
-            margin: 0; /* Removes the margin of the list */
-            padding: 0; /* Removes the padding of the list */
-            counter-reset: list-counter; /* Initializes a counter */
+            list-style-type: none; /* 移除默认列表样式 */
+            margin: 0; /* 移除列表的外边距 */
+            padding: 0; /* 移除列表的内边距 */
+            counter-reset: list-counter; /* 初始化计数器 */
         }
-    
+
         ol.circle-list li {
-            counter-increment: list-counter; /* Increments the counter */
-            position: relative; /* Sets the position to relative */
-            padding-left: 40px; /* Adds space on the left for the circle numbers */
+            counter-increment: list-counter; /* 计数器递增 */
+            position: relative; /* 设置位置为相对定位 */
+            padding-left: 40px; /* 为圆圈数字留出左侧空间 */
         }
-    
+
         ol.circle-list li::before {
-            content: counter(list-counter) ' '; /* Inserts the counter number followed by a space */
-            position: absolute; /* Positions the number absolutely within the list item */
-            left: 10px; /* Positions the number to the left */
-            top: 0; /* Aligns the number at the top */
-            border: 2px solid black; /* Adds a border to create the circle */
-            border-radius: 50%; /* Makes the border circular */
-            width: 18px; /* Sets the width of the circle */
-            height: 18px; /* Sets the height of the circle */
-            text-align: center; /* Centers the text inside the circle */
-            line-height: 18px; /* Aligns the number vertically inside the circle */
+            content: counter(list-counter) ' '; /* 插入计数器数字和空格 */
+            position: absolute; /* 绝对定位数字 */
+            left: 10px; /* 数字向左对齐 */
+            top: 0; /* 与项目顶部对齐 */
+            border: 2px solid red; /* 圆圈边框为红色 */
+            border-radius: 50%; /* 圆形边框 */
+            width: 18px; /* 圆圈宽度 */
+            height: 18px; /* 圆圈高度 */
+            text-align: center; /* 文字水平居中 */
+            line-height: 18px; /* 文字垂直居中 */
+            color: red; /* 数字颜色为红色 */
         }
+
     </style>
     
 
