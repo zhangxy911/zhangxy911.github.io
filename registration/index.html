@@ -57,6 +57,34 @@
         }
     </style>
 
+    <style>
+        ol.circle-list {
+            list-style-type: none; /* Removes the default list style */
+            margin: 0; /* Removes the margin of the list */
+            padding: 0; /* Removes the padding of the list */
+            counter-reset: list-counter; /* Initializes a counter */
+        }
+    
+        ol.circle-list li {
+            counter-increment: list-counter; /* Increments the counter */
+            position: relative; /* Sets the position to relative */
+            padding-left: 40px; /* Adds space on the left for the circle numbers */
+        }
+    
+        ol.circle-list li::before {
+            content: counter(list-counter) ' '; /* Inserts the counter number followed by a space */
+            position: absolute; /* Positions the number absolutely within the list item */
+            left: 10px; /* Positions the number to the left */
+            top: 0; /* Aligns the number at the top */
+            border: 2px solid black; /* Adds a border to create the circle */
+            border-radius: 50%; /* Makes the border circular */
+            width: 18px; /* Sets the width of the circle */
+            height: 18px; /* Sets the height of the circle */
+            text-align: center; /* Centers the text inside the circle */
+            line-height: 18px; /* Aligns the number vertically inside the circle */
+        }
+    </style>
+    
 
 </head>
 
@@ -182,6 +210,21 @@
     <stripe-pricing-table pricing-table-id="prctbl_1Obbk7DOzOgzOPyZNHfK5NUD"
     publishable-key="pk_live_51OaL9JDOzOgzOPyZwE05wkwx2TWiOGBLXbuwFfT60XcJxN9JWnfIknYSXZyK0JQ9gdlnR4BARqMvEr3cUX5SnhKb00M0I5t5WU">
     </stripe-pricing-table>
+
+    <h4>Payment Guide</h4>
+    <picture>
+        <img class="center" src="https://www.cmmm2024.com/assets/guide.png" alt="guide" id="guide" style="width: 100%; height: auto;">
+    </picture>
+
+    <ol class="circle-list">
+        <li>Change the quantity of registration.
+        <li>Add Additional Banquet Ticket, you can add up to one here, please contact us if you need to add more than one.</li>
+        <li>Make sure to enter a valid email address to receive a receipt.</li>
+        <li>Enter the Abstract Acceptance No. you received after submitting your abstract. </li>
+        <li>Credit cards are recommended. When using a UnionPay card, it has been tested that Class I accounts can make the payment (while Class II accounts fails) and the CVC can be filled with 000.</li>
+        <li>After successful payment, you will receive an email which can be used as a Remittance Voucher.</li>
+    </ol>
+
     <!-- <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
     <stripe-pricing-table pricing-table-id="prctbl_1OaaKmDOzOgzOPyZrMxAUXaS"
     publishable-key="pk_live_51OaL9JDOzOgzOPyZwE05wkwx2TWiOGBLXbuwFfT60XcJxN9JWnfIknYSXZyK0JQ9gdlnR4BARqMvEr3cUX5SnhKb00M0I5t5WU">
