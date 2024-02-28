@@ -20,6 +20,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        /* 使图片并排显示 */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image-container img {
+            margin-right: 10px; /* 图片之间的间距 */
+        }
+    </style>
+
+    <style>
         ul.custom-list {
             list-style-type: none; /* 移除默认的列表标记 */
             margin: 0;  /* 移除列表的外边距 */
@@ -50,6 +61,14 @@
     
         ul.custom-list li.hash::before {
             content: '#'; /* 在每个列表项前添加井号 */
+            color: black; /* 井号颜色 */
+            font-size: small; /* 井号大小 */
+            position: absolute; /* 绝对定位井号 */
+            left: 0; /* 将井号定位到列表项的最左侧 */
+        }
+
+        ul.custom-list li.circle::before {
+            content: '•'; /* 在每个列表项前添加井号 */
             color: black; /* 井号颜色 */
             font-size: small; /* 井号大小 */
             position: absolute; /* 绝对定位井号 */
@@ -211,23 +230,52 @@
 
     <h4>Payment Method</h4>
     To be announced.
+    <div class="image-container">
+        <!-- 第一个图片链接 -->
+        <a href="https://buy.stripe.com/7sI5kJcw6bEx2hq8wx" target="_blank">
+            <img src="https://www.cmmm2024.com/assets/Student_Delegate.png" alt="Description1" width="100">
+        </a>
+        <!-- 第二个图片链接 -->
+        <a href="https://buy.stripe.com/7sI5kJcw6bEx2hq8wx" target="_blank">
+            <img src="https://www.cmmm2024.com/assets/Full_Delegate.png" alt="Description2" width="100">
+        </a>
+        <!-- 第三个图片链接 -->
+        <a href="https://buy.stripe.com/7sI5kJcw6bEx2hq8wx" target="_blank">
+            <img src="https://www.cmmm2024.com/assets/Additional_Banquet_Ticket.png" alt="Description3" width="100">
+        </a>
+    </div>
+
     <!-- <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
     <stripe-pricing-table pricing-table-id="prctbl_1Obbk7DOzOgzOPyZNHfK5NUD"
     publishable-key="pk_live_51OaL9JDOzOgzOPyZwE05wkwx2TWiOGBLXbuwFfT60XcJxN9JWnfIknYSXZyK0JQ9gdlnR4BARqMvEr3cUX5SnhKb00M0I5t5WU">
     </stripe-pricing-table> -->
 
     <!-- For payment, you can refer to the <a href="https://www.cmmm2024.com/assets/Payment Guide.pdf" style="color:rgb(0, 109, 190);font-size: 20px;"><strong>"Payment Guide"</strong></a>. After successful payment, you should receive an Auto-reply emails which will be used as the <strong>Remittance Voucher</strong>. -->
-    <br>
-    <br>
+    <ul class="custom-list">
+        <li class="star">Select the quantity of registration. Purchase an <strong>Additional Banquet Ticket</strong> if needed.</li>
+        <li class="star">Make sure to provide a valid email address to receive a receipt.</li>
+        <!-- <li>Enter the <strong>Abstract Acceptance No.</strong> you received after submitting your abstract.</li> -->
+        <li class="star"><strong>Credit cards</strong> are recommended. </li>
+        <li class="star">After successful payment, you should receive an Auto-reply emails which can be used as the <strong>Remittance Voucher</strong>.</li>
+    </ul>
     
-    <!-- <h4>Online Registration</h4>
+    <h4>Online Registration</h4>
     Please fill in your registration information in the file <a href="https://www.cmmm2024.com/assets/Registration.docx" style="color:rgb(0, 109, 190);font-size: 20px;"><strong>"Registration.docx"</strong></a>, 
     then send your completed <strong>Registration Form</strong>, <strong>Remittance Voucher</strong> (received after payment), and <strong>Copy of Student ID Cards</strong> (If applicable) to the mailbox "cmmm2024@163.com" with the 
     email subject as <strong>"Registration: CMMM2024+Name+MS*******"</strong>. <br><br>
     After verification, you should receive an email with the subject of <strong>CMMM2024 Registration Successful</strong> with an attached <strong>Official INVOICE</strong>.
-    If you do not receive a reply after two days, please contact us via cmmm2024@163.com.<br><br><br><br> -->
+    If you do not receive a reply after two days, please contact us via cmmm2024@163.com.<br><br><br><br>
+<!-- 
+    <h4>Payment Guide</h4>
 
-    <!-- <h4>Payment Guide</h4>
+    <ul class="custom-list">
+        <li class="star">Select the quantity of registration. Purchase an <strong>Additional Banquet Ticket</strong> if needed.</li>
+        <li class="star">Make sure to provide a valid email address to receive a receipt.</li>
+        <!-- <li>Enter the <strong>Abstract Acceptance No.</strong> you received after submitting your abstract.</li> -->
+        <li class="star"><strong>Credit cards</strong> are recommended. </li>
+        <li class="star">After successful payment, you should receive an Auto-reply emails which can be used as the <strong>Remittance Voucher</strong>.</li>
+    </ul> -->
+<!--     
     <picture>
         <img class="center" src="https://www.cmmm2024.com/assets/guide.png" alt="guide" id="guide" style="width: 100%; height: auto;">
     </picture>
@@ -239,8 +287,8 @@
         <li>Enter the <strong>Abstract Acceptance No.</strong> you received after submitting your abstract.</li>
         <li><strong>Credit cards</strong> are recommended. Please pay attention when a <strong>UnionPay card</strong> is used. Only UnionPay card of <strong>Class I account</strong> can make payment (<strong>not Class II account</strong>) and the <strong>CVC</strong> can be filled with 000.</li>
         <li>After successful payment, you should receive an Auto-reply emails which can be used as the <strong>Remittance Voucher</strong>.</li>
-    </ol>
-    <br><br><br><br> -->
+    </ol> -->
+    <br><br><br><br>
     <!-- <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
     <stripe-pricing-table pricing-table-id="prctbl_1OaaKmDOzOgzOPyZrMxAUXaS"
     publishable-key="pk_live_51OaL9JDOzOgzOPyZwE05wkwx2TWiOGBLXbuwFfT60XcJxN9JWnfIknYSXZyK0JQ9gdlnR4BARqMvEr3cUX5SnhKb00M0I5t5WU">
