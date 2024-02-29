@@ -367,7 +367,7 @@ img {
        padding:0px 20px 0px 20px; /* 增加左右的内边距 */ }
 
     a{ color: #813c54;font-size:1em ; text-decoration:none;font-size:0.8em;margin:1em 0em 0.5em 0em}    
-
+    h1{font-size:1.75em;text-align: center;line-height: 2;}
     h2{font-size:1.5em;}
     h3{font-size:1.2em;line-height: 1.5em}
     h4{font-size:1em;line-height: 1.3em}
