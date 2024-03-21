@@ -265,8 +265,9 @@
 
 .text-column {
     float: right; /* Changed to float left */
-    width: calc(100% - 25%); /* Adjust the width of the text column, subtracting the total width of the image column and margin */
+    width: calc(100% - 20%); /* Adjust the width of the text column, subtracting the total width of the image column and margin */
     text-align: justify; /* Justify the text at both ends */
+    margin-left: 5%
 }
 
 /* Clear the floats */
