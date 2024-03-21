@@ -443,8 +443,9 @@ img {
 
    .text-column {
        float: none; /* Remove float for smaller screens */
-       width: 100%; /* Full width */
+       width: 90%; /* Full width */
        margin-top: 1em; /* Provide some space between the image and text */
+       margin-right: 1em; /* Provide some space between the image and text */
        justify-content: left;
    }
 
