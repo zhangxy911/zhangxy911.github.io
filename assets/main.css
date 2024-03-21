@@ -50,7 +50,7 @@
  h3{font-size:1.4em;}
  h4{font-size:1.3em;}
  h5{font-size:1em;}
- p{list-style:none; margin:50px auto 50px auto; padding:0px; width:900px; text-align:left;}
+ p{list-style:none; margin:24px auto; padding:0px; width:900px; text-align:left; margin-top: 75px;margin-bottom: 75px;}
  li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
  ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
  ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
